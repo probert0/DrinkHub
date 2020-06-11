@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.view.UserPageViewController">
+  <children>
+      <ListView fx:id="listView" layoutX="267.0" prefHeight="520.0" prefWidth="830.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <ImageView fx:id="userImage" fitHeight="200.0" fitWidth="200.0" layoutX="84.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="logic/image/quad.JPG" />
+         </image></ImageView>
+      <Label fx:id="userLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-4.0" layoutY="289.0" prefHeight="21.0" prefWidth="375.0" text="username" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>      
+      <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-4.0" layoutY="308.0" prefHeight="20.0" prefWidth="375.0" text="name surname">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="addF" layoutX="131.0" layoutY="384.0" mnemonicParsing="false" onAction="#addFilter" prefHeight="26.0" prefWidth="106.0" text="Add filter" />
+      <Button fx:id="removeF" layoutX="131.0" layoutY="416.0" mnemonicParsing="false" onAction="#removeFilter" text="Remove filter" />
+	<fx:include fx:id="banId" source="SampleBan.fxml" />
+  </children>
+</AnchorPane>

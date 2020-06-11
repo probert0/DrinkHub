@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1200.0" minHeight="600.0" minWidth="1200.0" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.view.HomepageGuestViewController">
+   <children>
+   	  <ImageView fitHeight="420.0" fitWidth="235.0"  pickOnBounds="true" AnchorPane.topAnchor="120.0" AnchorPane.leftAnchor="10.0" >
+         <image>
+            <Image url="logic/image/quad2.jpg" />
+         </image>
+      </ImageView>
+      
+      <Label layoutX="65.0" layoutY="150.0" text="WELCOME IN DRINKHUB"/>
+     
+
+      <ListView fx:id="listView"  prefHeight="420.0" prefWidth="830.0"  AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="120.0" />
+        <fx:include fx:id="banId" source="SampleBanGuest.fxml" />
+   </children>
+</AnchorPane>

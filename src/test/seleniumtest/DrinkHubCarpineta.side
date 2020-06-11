@@ -1,0 +1,208 @@
+{
+  "id": "72183a71-b52d-4f15-b8a9-0dbfb010218e",
+  "version": "2.0",
+  "name": "DrinkHub",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "27ac5755-1a82-4c26-ba81-fe9866268ec6",
+    "name": "InsertedCocktailTest",
+    "commands": [{
+      "id": "1006d159-441a-4efe-b48c-ed80b5231b2d",
+      "comment": "",
+      "command": "open",
+      "target": "/pappapero/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c35fb872-2456-4f04-868f-e264289df75f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5a30aac-aa53-44bd-b25d-80f6085227db",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/fieldset/h3/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19c0a9a2-c7f2-43cc-874a-2ff25a5620c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/fieldset/h3/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "fra"
+    }, {
+      "id": "765cb2db-d732-4135-bc51-1f342d5c8fdb",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/fieldset/h3[2]/input", "xpath:idRelative"],
+        ["xpath=//h3[2]/input", "xpath:position"]
+      ],
+      "value": "rum"
+    }, {
+      "id": "7e68e28f-182e-471d-95b4-b3517402f7e6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/fieldset/h3[2]/input", "xpath:idRelative"],
+        ["xpath=//h3[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "36c97f5a-948e-4850-8cb9-1f42e948028e",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(4) > input",
+      "targets": [
+        ["css=form:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@value='New cocktail']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/form[3]/input", "xpath:idRelative"],
+        ["xpath=//form[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df8bb022-8860-452a-a1da-4d8944054b0c",
+      "comment": "",
+      "command": "click",
+      "target": "id=cocktailName",
+      "targets": [
+        ["id=cocktailName", "id"],
+        ["name=cocktailName", "name"],
+        ["css=#cocktailName", "css:finder"],
+        ["xpath=//input[@id='cocktailName']", "xpath:attributes"],
+        ["xpath=//div[@id='formPost']/form/h3/input", "xpath:idRelative"],
+        ["xpath=//h3/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dfa4ab7-ca3e-4932-8949-d04303239417",
+      "comment": "",
+      "command": "type",
+      "target": "id=cocktailName",
+      "targets": [
+        ["id=cocktailName", "id"],
+        ["name=cocktailName", "name"],
+        ["css=#cocktailName", "css:finder"],
+        ["xpath=//input[@id='cocktailName']", "xpath:attributes"],
+        ["xpath=//div[@id='formPost']/form/h3/input", "xpath:idRelative"],
+        ["xpath=//h3/input", "xpath:position"]
+      ],
+      "value": "SeleniumProva"
+    }, {
+      "id": "b4d52a99-a826-4f9e-ac05-4664af154edd",
+      "comment": "",
+      "command": "type",
+      "target": "id=ingredient1",
+      "targets": [
+        ["id=ingredient1", "id"],
+        ["name=ingredient1", "name"],
+        ["css=#ingredient1", "css:finder"],
+        ["xpath=//input[@id='ingredient1']", "xpath:attributes"],
+        ["xpath=//div[@id='formPost']/form/h4[2]/input", "xpath:idRelative"],
+        ["xpath=//h4[2]/input", "xpath:position"]
+      ],
+      "value": "SeleniumIngr,3,ml"
+    }, {
+      "id": "605d356e-5261-467f-890e-d828ad092187",
+      "comment": "",
+      "command": "click",
+      "target": "id=procedure",
+      "targets": [
+        ["id=procedure", "id"],
+        ["name=procedure", "name"],
+        ["css=#procedure", "css:finder"],
+        ["xpath=//input[@id='procedure']", "xpath:attributes"],
+        ["xpath=//div[@id='formPost']/form/h3[3]/input", "xpath:idRelative"],
+        ["xpath=//h3[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54c2b99d-d130-44dd-b12a-25d7c8059917",
+      "comment": "",
+      "command": "type",
+      "target": "id=procedure",
+      "targets": [
+        ["id=procedure", "id"],
+        ["name=procedure", "name"],
+        ["css=#procedure", "css:finder"],
+        ["xpath=//input[@id='procedure']", "xpath:attributes"],
+        ["xpath=//div[@id='formPost']/form/h3[3]/input", "xpath:idRelative"],
+        ["xpath=//h3[3]/input", "xpath:position"]
+      ],
+      "value": "SeleniumProcedure"
+    }, {
+      "id": "356c72c7-6732-40a9-939c-8ec23dc00da0",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(27)",
+      "targets": [
+        ["css=input:nth-child(27)", "css:finder"],
+        ["xpath=//input[@value='Done']", "xpath:attributes"],
+        ["xpath=//div[@id='formPost']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64c911f1-6433-4958-9edb-b4ca96f42d61",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(3) > input",
+      "targets": [
+        ["css=form:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@value='My profile']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/form[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b81f96d-f496-41d1-9cb0-c182ba77d181",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='post']/h3",
+      "targets": [
+        ["xpath=//div[@id='post']/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'SeleniumProva')]", "xpath:innerText"]
+      ],
+      "value": "SeleniumProva"
+    }]
+  }],
+  "suites": [{
+    "id": "76b22008-1914-44fa-a9cc-117f691c29ab",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["27ac5755-1a82-4c26-ba81-fe9866268ec6"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

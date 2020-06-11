@@ -1,0 +1,169 @@
+{
+  "id": "4cdcdcf2-26b2-4d58-8b8f-93b828cee345",
+  "version": "2.0",
+  "name": "DrinkHub",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "75cc8ab9-2ba5-4d7b-a6a0-160a1c0dc5fd",
+    "name": "positionTest",
+    "commands": [{
+      "id": "e7f2a5d9-d6fb-4b87-92d6-98a365a130e0",
+      "comment": "",
+      "command": "open",
+      "target": "/DrinkHubFX/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "327100ec-d169-4391-bab3-bd5d1af595d4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x705",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5c241fe-be2f-42df-a612-02df3b89c2d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/fieldset/h3/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fc831b5-191f-4c29-8660-eac705c63f06",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/fieldset/h3/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "0cad6880-0ec7-4728-b802-ee6451e1efee",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/fieldset/h3[2]/input", "xpath:idRelative"],
+        ["xpath=//h3[2]/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "3e539c9a-03fa-4e0c-90dd-080c600c7313",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(4)",
+      "targets": [
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8477523-81ba-498e-8ab5-841531e529da",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(6) > input",
+      "targets": [
+        ["css=form:nth-child(6) > input", "css:finder"],
+        ["xpath=//input[@value='Search bar']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/form[5]/input", "xpath:idRelative"],
+        ["xpath=//form[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4703cb0-7c7b-42ae-a24e-1f2aa76512d1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=form:nth-child(6) > input",
+      "targets": [
+        ["css=form:nth-child(6) > input", "css:finder"],
+        ["xpath=//input[@value='Search bar']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/form[5]/input", "xpath:idRelative"],
+        ["xpath=//form[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e35b350d-9304-43b7-92c7-dc85eda333c4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=form:nth-child(6) > input",
+      "targets": [
+        ["css=form:nth-child(6) > input", "css:finder"],
+        ["xpath=//input[@value='Search bar']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/form[5]/input", "xpath:idRelative"],
+        ["xpath=//form[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c49a0a2-5994-4da6-8f24-c1e5055ca47e",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(5) .gm-style-iw-d > div",
+      "targets": [
+        ["css=div:nth-child(5) .gm-style-iw-d > div", "css:finder"],
+        ["xpath=//div[@id='map']/div/div/div/div[3]/div/div[4]/div[5]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88571dbf-a4bb-42c3-8031-c76b761c3382",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(5) .gm-style-iw-d > div",
+      "targets": [
+        ["css=div:nth-child(5) .gm-style-iw-d > div", "css:finder"],
+        ["xpath=//div[@id='map']/div/div/div/div[3]/div/div[4]/div[5]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88d6a489-e073-4ff8-a964-959baa054132",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=div:nth-child(5) .gm-style-iw-d > div",
+      "targets": [
+        ["css=div:nth-child(5) .gm-style-iw-d > div", "css:finder"],
+        ["xpath=//div[@id='map']/div/div/div/div[3]/div/div[4]/div[5]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "758eee8a-def0-4a5f-9a92-0b718ded3a9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(5) .gm-style-iw-d > div",
+      "targets": [
+        ["css=div:nth-child(5) .gm-style-iw-d > div", "css:finder"],
+        ["xpath=//div[@id='map']/div/div/div/div[3]/div/div[4]/div[5]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Your current position"
+    }]
+  }],
+  "suites": [{
+    "id": "81f359c0-ac49-4479-9a48-ba64bd97c5ec",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["75cc8ab9-2ba5-4d7b-a6a0-160a1c0dc5fd"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

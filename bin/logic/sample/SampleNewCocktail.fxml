@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1200.0" minHeight="600.0" minWidth="1200.0" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.view.NewCocktailViewController">
+   <children>
+	<fx:include fx:id="banId" source="SampleBan.fxml" />
+      <ImageView fx:id="image" fitHeight="350.0" fitWidth="340.0" layoutX="47.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="doneButton" layoutX="1069.0" layoutY="517.0" mnemonicParsing="false" onAction="#done" prefHeight="37.0" prefWidth="76.0" text="DONE" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="addProcedure" layoutX="430.0" layoutY="363.0" prefHeight="154.0" prefWidth="340.0" promptText="Procedure" />
+      <Button fx:id="addIngr" layoutX="600.0" layoutY="321.0" mnemonicParsing="false" onAction="#addI" prefHeight="25.0" prefWidth="170.0" text="Add ingredient" />
+      <Button fx:id="addTags" layoutX="975.0" layoutY="321.0" mnemonicParsing="false" onAction="#addT" prefHeight="26.0" prefWidth="170.0" text="Add tag" />
+      <TextArea fx:id="addDrinkName" layoutX="47.0" layoutY="104.0" prefHeight="46.0" prefWidth="340.0" promptText="Cocktail name">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="errMsg" layoutX="805.0" layoutY="417.0" prefHeight="46.0" prefWidth="340.0" textAlignment="RIGHT" textFill="#ff3900">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="addIngredients" editable="true" layoutX="430.0" layoutY="167.0" prefHeight="154.0" prefWidth="340.0" />
+      <ListView fx:id="addTagsL" editable="true" layoutX="805.0" layoutY="167.0" prefHeight="154.0" prefWidth="340.0" />
+      <Button fx:id="removeIngr" layoutX="430.0" layoutY="321.0" mnemonicParsing="false" onAction="#removeI" prefHeight="25.0" prefWidth="170.0" text="Remove ingredient" />
+      <Button fx:id="removeTags" layoutX="805.0" layoutY="321.0" mnemonicParsing="false" onAction="#removeT" prefHeight="25.0" prefWidth="170.0" text="Remove tag" />
+      <Button fx:id="next" layoutX="337.0" layoutY="467.0" mnemonicParsing="false" onAction="#nextImage" prefHeight="50.0" prefWidth="50.0" text="&gt;">
+         <font>
+            <Font name="Cantarell Extra Bold" size="21.0" />
+         </font></Button>
+      <Button fx:id="prev" layoutX="51.0" layoutY="467.0" mnemonicParsing="false" onAction="#previousImage" prefHeight="50.0" prefWidth="50.0" text="&lt;">
+         <font>
+            <Font name="Cantarell Extra Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
