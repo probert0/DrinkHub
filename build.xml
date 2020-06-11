@@ -3,30 +3,14 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="pappapero">
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="DrinkHub">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../../eclipse/jee-2019-09/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
-    <path id="JUnit 5.libraryclasspath">
-        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.api_5.5.1.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.engine_5.5.1.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.5.1.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.params_5.5.1.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.commons_1.5.1.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.engine_1.5.1.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.launcher_1.5.1.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.runner_1.5.1.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.suite.api_1.5.1.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.vintage.engine_5.5.1.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.opentest4j_1.2.0.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.apiguardian_1.1.0.v20190826-0900.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
-    </path>
-    <path id="Apache Tomcat v9.0 [Apache Tomcat v9.0 (2)].libraryclasspath">
+    <path id="Apache Tomcat v9.0 [Apache Tomcat v9.0].libraryclasspath">
         <pathelement location="../../../Documents/apache-tomcat-9.0.30/lib/annotations-api.jar"/>
         <pathelement location="../../../Documents/apache-tomcat-9.0.30/lib/catalina-ant.jar"/>
         <pathelement location="../../../Documents/apache-tomcat-9.0.30/lib/catalina-ha.jar"/>
@@ -62,58 +46,40 @@
     </path>
     <path id="Web App Libraries.libraryclasspath"/>
     <path id="EAR Libraries.libraryclasspath"/>
-    <path id="pappapero.classpath">
+    <path id="JUnit 5.libraryclasspath">
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.api_5.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.engine_5.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.params_5.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.commons_1.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.engine_1.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.launcher_1.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.runner_1.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.suite.api_1.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.vintage.engine_5.5.1.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.opentest4j_1.2.0.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.apiguardian_1.1.0.v20190826-0900.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <path id="DrinkHub.classpath">
         <pathelement location="bin"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/bin/bootstrap.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/bin/commons-daemon.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/bin/tomcat-juli.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/annotations-api.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/catalina.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/catalina-ant.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/catalina-ha.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/catalina-ssi.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/catalina-storeconfig.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/catalina-tribes.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/ecj-4.13.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/el-api.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/jasper.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/jasper-el.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/jaspic-api.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/jsp-api.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/mariadb-java-client-2.5.2.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/mysql-connector-java-8.0.19.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/servlet-api.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-api.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-coyote.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-dbcp.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-i18n-cs.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-i18n-de.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-i18n-es.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-i18n-fr.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-i18n-ja.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-i18n-ko.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-i18n-pt-BR.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-i18n-ru.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-i18n-zh-CN.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-jdbc.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-jni.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-util.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-util-scan.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/tomcat-websocket.jar"/>
-        <pathelement location="../../../Downloads/apache-tomcat-9.0.30-windows-x64/apache-tomcat-9.0.30/lib/websocket-api.jar"/>
+        <path refid="Apache Tomcat v9.0 [Apache Tomcat v9.0].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
         <path refid="JUnit 5.libraryclasspath"/>
         <pathelement location="../../../Downloads/GMapsFX-2.12.0.jar"/>
+        <pathelement location="../../../Downloads/mysql-connector-java-8.0.19.jar"/>
         <pathelement location="../../../Downloads/mariadb-java-client-2.5.2.jar"/>
         <pathelement location="../../../Downloads/selenium-html-runner-3.141.59.jar"/>
         <pathelement location="../../../Downloads/selenium-server-standalone-3.141.59.jar"/>
-        <path refid="Apache Tomcat v9.0 [Apache Tomcat v9.0 (2)].libraryclasspath"/>
-        <path refid="Web App Libraries.libraryclasspath"/>
-        <path refid="EAR Libraries.libraryclasspath"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.xtend"/>
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
@@ -128,7 +94,7 @@
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
-            <classpath refid="pappapero.classpath"/>
+            <classpath refid="DrinkHub.classpath"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
@@ -145,139 +111,18 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="LoginView (11)">
+    <target name="DrinkHub (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="DrinkHub.classpath"/>
+        </junit>
+    </target>
+    <target name="LoginView (14)">
         <java classname="logic.view.LoginView" failonerror="true" fork="yes">
-            <classpath refid="pappapero.classpath"/>
+            <classpath refid="DrinkHub.classpath"/>
         </java>
-    </target>
-    <target name="LoginView (13)">
-        <java classname="src.logic.view.LoginView" failonerror="true" fork="yes">
-            <classpath refid="pappapero.classpath"/>
-        </java>
-    </target>
-    <target name="SponsorTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.SponsorTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="src (3)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="test.junittest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="TestFindBarUserController">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.junittest.TestFindBarUserController" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="TestFindCocktailController (1)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.junittest.TestFindCocktailController" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="TestFindCocktailController">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.TestFindCocktailController" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="TestLogin (1)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.TestLogin" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="TestLogin (3)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.seleniumtest.TestLogin" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="TestLoginController (1)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.junittest.TestLoginController" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="TestNewCocktailFailedAssert">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.seleniumtest.TestNewCocktailFailedAssert" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="TestSignUpController (1)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.TestSignUpController" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="TestSignUpController (2)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.junittest.TestSignUpController" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="TestUserDao (1)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.TestUserDao" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
-    </target>
-    <target name="TestUserDao (2)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.junittest.TestUserDao" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="pappapero.classpath"/>
-        </junit>
     </target>
     <target name="junitreport">
         <junitreport todir="${junit.output.dir}">

@@ -46,7 +46,7 @@ public class FindCocktailViewController implements Initializable {
 	private String currOwner = null;
 	private String selectedItem = null;
 	private Integer currId = 0; 
-	private String postedBy = "posted by: "; // messa poichè mi dava codice duplicato
+	private String postedBy = "posted by: ";
 	private ButtonGroup nti = new ButtonGroup();
 
 	@FXML
