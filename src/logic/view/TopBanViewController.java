@@ -41,6 +41,10 @@ public class TopBanViewController {
             inst = new TopBanViewController();
         return inst;
     }
+    
+    public void initialize() {
+    	this.btnSearchUser.setDisable(true);
+    }
 
 
     @FXML
