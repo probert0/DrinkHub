@@ -39,6 +39,7 @@ public class TopBanGuestViewController {
     	this.btnNewPost.setDisable(true);
     	this.btnSearch.setDisable(true);
     	this.btnSearchUser.setDisable(true);
+    	this.btnSignUp.setDisable(true);
     	
     }
     

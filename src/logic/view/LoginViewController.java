@@ -90,5 +90,6 @@ public class LoginViewController
     public void initialize() {
     	SponsorController controller = SponsorController.getInstance();
     	controller.cleanSponsorDB();
+    	signButton.setDisable(true);
     }
 }
